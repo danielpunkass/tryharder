@@ -12,32 +12,37 @@ import XcodeKit
 
 class ModifySelectedTextCommand: NSObject, XCSourceEditorCommand {
 
-	func stringForSelectedRange(_ range: XCSourceTextRange, fromLines lines: NSMutableArray) -> String {
-		var selectionString = ""
-
+	func redactTextInRange(_ range: XCSourceTextRange, inLines lines: NSMutableArray) -> String {
+	
 		let startLineIndex = range.start.line
 		let endLineIndex = range.end.line
 
 		for thisLineIndex in startLineIndex...endLineIndex {
-			let thisLineString = lines[thisLineIndex] as! NSString
-			var capturedRange = NSMakeRange(0, thisLineString.length)
+			var thisLineString = lines[thisLineIndex] as! String
+			var redactedRangeStart = 0
+			var redactedRangeEnd = thisLineString.characters.count
 
 			// If it's the first line, record the starting offset
 			if (thisLineIndex == startLineIndex) {
-				capturedRange.location = range.start.column
-				capturedRange.length = capturedRange.length - range.start.column
+				redactedRangeStart = range.start.column
 			}
 
 			// If this is the last line, then we're either selecting from the beginning (0)
 			// or else we set the specific starting offset above
 			if (thisLineIndex == endLineIndex) {
-				if (capturedRange.length != 0) {
-					capturedRange.length = range.end.column - capturedRange.location + 1
-				}
+				redactedRangeEnd = range.end.column
 			}
 
-			let addedString = thisLineString.substring(with: capturedRange)
-			selectionString.append(addedString)
+			let redactionStartIndex = thisLineString.index(thisLineString.startIndex, offsetBy:redactedRangeStart)
+			let redactionEndIndex = thisLineString.index(thisLineString.startIndex, offsetBy:redactedRangeEnd)
+
+			var redactionString = ""
+			for _ in redactedRangeStart...redactedRangeEnd {
+				redactionString = redactionString + "█"
+			}
+
+			thisLineString.replaceSubrange(redactionStartIndex...redactionEndIndex, with:redactionString)
+			lines[thisLineIndex] = thisLineString
 		}
 
 		// There's something wrong with logic above - not working right for case where there is no selection
@@ -54,9 +59,7 @@ class ModifySelectedTextCommand: NSObject, XCSourceEditorCommand {
 
 			if let selectionRange = selection as? XCSourceTextRange {
 
-				let selectedString = stringForSelectedRange(selectionRange, fromLines: textBuffer.lines)
-
-				if (false) { print("Warning: need to implement replacement - ideally by manipulating the lines buffer, but possibly by using the complete buffer") }
+				redactTextInRange(selectionRange, inLines: textBuffer.lines)
 			}
 		}
 
