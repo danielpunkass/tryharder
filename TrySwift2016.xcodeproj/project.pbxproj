@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		650BABAA1D313AEE006255D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BABA91D313AEE006255D5 /* AppDelegate.swift */; };
+		650BABAC1D313AEE006255D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 650BABAB1D313AEE006255D5 /* Assets.xcassets */; };
+		650BABAF1D313AEE006255D5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 650BABAD1D313AEE006255D5 /* MainMenu.xib */; };
+		650BABBD1D313B11006255D5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650BABBC1D313B11006255D5 /* Cocoa.framework */; };
+		650BABC21D313B11006255D5 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BABC11D313B11006255D5 /* SourceEditorExtension.swift */; };
+		650BABC41D313B11006255D5 /* OpenURLCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BABC31D313B11006255D5 /* OpenURLCommand.swift */; };
+		650BABC81D313B11006255D5 /* Try Harder.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 650BABBA1D313B10006255D5 /* Try Harder.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		655921131D5A1BD800C363A1 /* DisplayAlertCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655921121D5A1BD800C363A1 /* DisplayAlertCommand.swift */; };
+		65F6A9A31D7627AA00A44BFA /* ModifySelectedTextCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6A9A21D7627AA00A44BFA /* ModifySelectedTextCommand.swift */; };
+		65F6A9DE1D77342C00A44BFA /* InsertPlaceholdersCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F6A9DD1D77342C00A44BFA /* InsertPlaceholdersCommand.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		650BABC61D313B11006255D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 650BAB9E1D313AEE006255D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 650BABB91D313B10006255D5;
+			remoteInfo = "Try Harder";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		650BABCC1D313B11006255D5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				650BABC81D313B11006255D5 /* Try Harder.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		650BABA61D313AEE006255D5 /* TrySwift2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrySwift2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		650BABA91D313AEE006255D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		650BABAB1D313AEE006255D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		650BABAE1D313AEE006255D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		650BABB01D313AEE006255D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		650BABBA1D313B10006255D5 /* Try Harder.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Try Harder.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		650BABBC1D313B11006255D5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		650BABC01D313B11006255D5 /* Try_Harder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Try_Harder.entitlements; sourceTree = "<group>"; };
+		650BABC11D313B11006255D5 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		650BABC31D313B11006255D5 /* OpenURLCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenURLCommand.swift; sourceTree = "<group>"; };
+		650BABC51D313B11006255D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		655921121D5A1BD800C363A1 /* DisplayAlertCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayAlertCommand.swift; sourceTree = "<group>"; };
+		65F6A9A21D7627AA00A44BFA /* ModifySelectedTextCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModifySelectedTextCommand.swift; sourceTree = "<group>"; };
+		65F6A9DD1D77342C00A44BFA /* InsertPlaceholdersCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertPlaceholdersCommand.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		650BABA31D313AEE006255D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650BABB71D313B10006255D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650BABBD1D313B11006255D5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		650BAB9D1D313AEE006255D5 = {
+			isa = PBXGroup;
+			children = (
+				650BABA81D313AEE006255D5 /* TrySwift2016 */,
+				650BABBE1D313B11006255D5 /* Try Harder */,
+				650BABBB1D313B11006255D5 /* Frameworks */,
+				650BABA71D313AEE006255D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		650BABA71D313AEE006255D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				650BABA61D313AEE006255D5 /* TrySwift2016.app */,
+				650BABBA1D313B10006255D5 /* Try Harder.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		650BABA81D313AEE006255D5 /* TrySwift2016 */ = {
+			isa = PBXGroup;
+			children = (
+				650BABA91D313AEE006255D5 /* AppDelegate.swift */,
+				650BABAB1D313AEE006255D5 /* Assets.xcassets */,
+				650BABAD1D313AEE006255D5 /* MainMenu.xib */,
+				650BABB01D313AEE006255D5 /* Info.plist */,
+			);
+			path = TrySwift2016;
+			sourceTree = "<group>";
+		};
+		650BABBB1D313B11006255D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				650BABBC1D313B11006255D5 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		650BABBE1D313B11006255D5 /* Try Harder */ = {
+			isa = PBXGroup;
+			children = (
+				650BABC11D313B11006255D5 /* SourceEditorExtension.swift */,
+				655921121D5A1BD800C363A1 /* DisplayAlertCommand.swift */,
+				65F6A9DD1D77342C00A44BFA /* InsertPlaceholdersCommand.swift */,
+				65F6A9A21D7627AA00A44BFA /* ModifySelectedTextCommand.swift */,
+				650BABC31D313B11006255D5 /* OpenURLCommand.swift */,
+				650BABC51D313B11006255D5 /* Info.plist */,
+				650BABBF1D313B11006255D5 /* Supporting Files */,
+			);
+			path = "Try Harder";
+			sourceTree = "<group>";
+		};
+		650BABBF1D313B11006255D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				650BABC01D313B11006255D5 /* Try_Harder.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		650BABA51D313AEE006255D5 /* TrySwift2016 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 650BABB31D313AEE006255D5 /* Build configuration list for PBXNativeTarget "TrySwift2016" */;
+			buildPhases = (
+				650BABA21D313AEE006255D5 /* Sources */,
+				650BABA31D313AEE006255D5 /* Frameworks */,
+				650BABA41D313AEE006255D5 /* Resources */,
+				650BABCC1D313B11006255D5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				650BABC71D313B11006255D5 /* PBXTargetDependency */,
+			);
+			name = TrySwift2016;
+			productName = TrySwift2016;
+			productReference = 650BABA61D313AEE006255D5 /* TrySwift2016.app */;
+			productType = "com.apple.product-type.application";
+		};
+		650BABB91D313B10006255D5 /* Try Harder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 650BABC91D313B11006255D5 /* Build configuration list for PBXNativeTarget "Try Harder" */;
+			buildPhases = (
+				650BABB61D313B10006255D5 /* Sources */,
+				650BABB71D313B10006255D5 /* Frameworks */,
+				650BABB81D313B10006255D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Try Harder";
+			productName = "Try Harder";
+			productReference = 650BABBA1D313B10006255D5 /* Try Harder.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		650BAB9E1D313AEE006255D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Daniel Jalkut";
+				TargetAttributes = {
+					650BABA51D313AEE006255D5 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = J79Y4KWZQ2;
+						DevelopmentTeamName = "Daniel Jalkut (Personal Team)";
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					650BABB91D313B10006255D5 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = J79Y4KWZQ2;
+						DevelopmentTeamName = "Daniel Jalkut (Personal Team)";
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 650BABA11D313AEE006255D5 /* Build configuration list for PBXProject "TrySwift2016" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 650BAB9D1D313AEE006255D5;
+			productRefGroup = 650BABA71D313AEE006255D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				650BABA51D313AEE006255D5 /* TrySwift2016 */,
+				650BABB91D313B10006255D5 /* Try Harder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		650BABA41D313AEE006255D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650BABAC1D313AEE006255D5 /* Assets.xcassets in Resources */,
+				650BABAF1D313AEE006255D5 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650BABB81D313B10006255D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		650BABA21D313AEE006255D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650BABAA1D313AEE006255D5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		650BABB61D313B10006255D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650BABC21D313B11006255D5 /* SourceEditorExtension.swift in Sources */,
+				650BABC41D313B11006255D5 /* OpenURLCommand.swift in Sources */,
+				65F6A9DE1D77342C00A44BFA /* InsertPlaceholdersCommand.swift in Sources */,
+				65F6A9A31D7627AA00A44BFA /* ModifySelectedTextCommand.swift in Sources */,
+				655921131D5A1BD800C363A1 /* DisplayAlertCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		650BABC71D313B11006255D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 650BABB91D313B10006255D5 /* Try Harder */;
+			targetProxy = 650BABC61D313B11006255D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		650BABAD1D313AEE006255D5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				650BABAE1D313AEE006255D5 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		650BABB11D313AEE006255D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		650BABB21D313AEE006255D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		650BABB41D313AEE006255D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TrySwift2016/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jalkut.talks.TrySwift2016;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		650BABB51D313AEE006255D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TrySwift2016/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jalkut.talks.TrySwift2016;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		650BABCA1D313B11006255D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Try Harder/Try_Harder.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Try Harder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jalkut.talks.TrySwift2016.Try-Harder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		650BABCB1D313B11006255D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Try Harder/Try_Harder.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Try Harder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jalkut.talks.TrySwift2016.Try-Harder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		650BABA11D313AEE006255D5 /* Build configuration list for PBXProject "TrySwift2016" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650BABB11D313AEE006255D5 /* Debug */,
+				650BABB21D313AEE006255D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		650BABB31D313AEE006255D5 /* Build configuration list for PBXNativeTarget "TrySwift2016" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650BABB41D313AEE006255D5 /* Debug */,
+				650BABB51D313AEE006255D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		650BABC91D313B11006255D5 /* Build configuration list for PBXNativeTarget "Try Harder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650BABCA1D313B11006255D5 /* Debug */,
+				650BABCB1D313B11006255D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 650BAB9E1D313AEE006255D5 /* Project object */;
+}
